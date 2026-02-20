@@ -1,0 +1,22 @@
+{
+  "name": "threejs-demos",
+  "version": "1.0.0",
+  "description": "three.js demos",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --base / --port 5176",
+    "build": "vite build --base /threejs/ --sourcemap true",
+    "preview": "vite preview --base /threejs/",
+    "test": "eslint ."
+  },
+  "author": "James Wheare",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "three": "^0.183.1"
+  }
+}
