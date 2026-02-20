@@ -7,6 +7,7 @@ import { Inspector } from 'three/addons/inspector/Inspector.js';
 import { SkyMesh } from './skymesh.js';
 
 import { WaterMesh } from 'three/addons/objects/WaterMesh.js';
+import waternormals_jpg from './waternormals.jpg';
 
 const CONFIG = {
   lat: 56,
@@ -359,7 +360,7 @@ water.receiveShadow = true;
 scene.add(water);
 
 const loader = new THREE.TextureLoader();
-const waterNormals = loader.load( 'waternormals.jpg' );
+const waterNormals = loader.load(waternormals_jpg);
 waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
 
 const waterMesh = new WaterMesh(waterGeom, {

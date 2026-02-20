@@ -11,7 +11,7 @@ export default defineConfig([
     },
     extends: ["js/recommended"],
     languageOptions: {
-      globals: globals.node
+      globals: Object.assign({}, globals.node, globals.browser)
     },
     rules: {
       "no-unused-vars": "off",
